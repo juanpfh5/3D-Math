@@ -1,0 +1,77 @@
+<div class="content-wrapper">
+  <img alt="figure" [src]="ruta1" class="full-width-image" />
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ejercicio 1</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div [innerHTML]="pregunta1"></div>
+      <!-- <div>{{ respuesta1 }}</div> -->
+      <br>
+
+      <ion-item>
+        <ion-input type="number" placeholder="Respuesta" [(ngModel)]="respuestaUsuario1"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+<div class="content-wrapper">
+  <img alt="figure" [src]="ruta2" class="full-width-image" />
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ejercicio 2</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div [innerHTML]="pregunta2"></div>
+      <!-- <div>{{ respuesta2 }}</div> -->
+      <br>
+      
+      <ion-item>
+        <ion-input type="number" placeholder="Respuesta" [(ngModel)]="respuestaUsuario2"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+<div class="content-wrapper">
+  <img alt="figure" [src]="ruta3" class="full-width-image" />
+    <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ejercicio 3</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div [innerHTML]="pregunta3"></div>
+      <!-- <div>{{ respuesta3 }}</div> -->
+      <br>
+      
+      <ion-item>
+        <ion-input type="number" placeholder="Respuesta" [(ngModel)]="respuestaUsuario3"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+<div class="content-wrapper">
+  <img alt="figure" [src]="ruta4" class="full-width-image" />
+    <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ejercicio 4</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div [innerHTML]="pregunta4"></div>
+      <!-- <div>{{ respuesta4 }}</div> -->
+      <br>
+      
+      <ion-item>
+        <ion-input type="number" placeholder="Respuesta" [(ngModel)]="respuestaUsuario4"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+<ion-button class="btn-ex" expand="block" (click)="presentPopover($event)">Evaluar resultados</ion-button>

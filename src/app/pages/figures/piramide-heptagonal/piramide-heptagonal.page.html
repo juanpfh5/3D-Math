@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pirámide heptagonal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-figure
+  ruta="assets/images/piramide_heptagonal/figure.gif"
+  titulo="Pirámide heptagonal"
+  texto="Una pirámide heptagonal es una figura tridimensional que tiene una base heptagonal (es decir, una base con siete lados) y siete caras laterales que son triángulos, los cuales convergen en un punto común llamado vértice o ápice. 
+  <br><strong>Perímetro de la base</strong>: 
+  $$P = 7 a$$
+  <strong>Área de la base</strong>: 
+  $$A_{base} = \frac{7}{4} a^2 cot(\frac{\pi}{7})$$
+  <strong>Área lateral</strong>: 
+  $$A_{lateral} = 7 (\frac{1}{2} a * ap) = \frac{7}{2} a * ap$$
+  <strong>Área total</strong>: 
+  $$A_{total} = A_{base} + A_{lateral}$$
+  <strong>Volumen</strong>: 
+  $$V = \frac{1}{3} A_{base} h$$
+  Donde <strong>a</strong> es la longitud de un lado del heptágono, <strong>ap</strong> es la apotema (la altura de cada triángulo lateral desde la base hasta el vértice de la pirámide) y <strong>h</strong> es la altura desde el centro de la base heptagonal hasta el vértice de la pirámide."
+  audioRuta="assets/audios/piramide_heptagonal/audio.mp3">
+</app-figure>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/example-piramide-heptagonal')">Ejemplos</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-piramide-heptagonal')">Ejercicios</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

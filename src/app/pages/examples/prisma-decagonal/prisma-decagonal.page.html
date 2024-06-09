@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Prisma decagonal)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example ruta="assets/images/prisma_decagonal/figure_static.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de un Prisma Decagonal" 
+  texto="El perímetro de la base de un prisma decagonal es simplemente la suma de las longitudes de los diez lados del decágono. Si <strong>s</strong> es la longitud de un lado del decágono, entonces el perímetro <strong>P</strong> de la base es:
+  
+  $$P = 10 s$$
+  
+  Supongamos que tenemos un prisma decagonal con un decágono base donde cada lado mide <strong>s = 5</strong> unidades. Entonces, el perímetro de la base sería:
+  
+  $$P = 10 * 5 = 50$$
+
+  Por lo tanto, el perímetro de la base del prisma es <strong>50</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/prisma_decagonal/figure_static.jpg" 
+  titulo="Ejemplo 2: Área de la Base de un Prisma Decagonal" 
+  texto="El área de la base de un prisma decagonal se puede calcular de varias maneras. Una forma es dividir el decágono en triángulos isósceles y calcular el área de uno de esos triángulos, luego multiplicar por 10. Otro método es utilizando la fórmula general para el área de un decágono regular. Para un decágono regular, el área <strong>A_base</strong> de la base es:
+  
+  $$A_{base} = \frac{5}{2} a^2 cot(\frac{\pi}{10})$$
+  
+  donde <strong>s</strong> es la longitud de un lado del decágono y <strong>cot</strong> es la cotangente.
+  <br>
+  Supongamos que tenemos un prisma decagonal con un decágono base donde cada lado mide <strong>s = 5</strong> unidades. La cotangente de <strong>π/10</strong> se puede calcular o aproximar utilizando una calculadora científica:
+  
+  $$cot(\frac{\pi}{10}) = 2.747$$
+  
+  Entonces, el área de la base sería:
+  
+  $$A_{base} = \frac{5}{2} * 5^2 * 2.747 = 68.675$$
+  
+  Por lo tanto, el área de la base del prisma es aproximadamente <strong>68.675</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/prisma_decagonal/figure_static.jpg" 
+  titulo="Ejemplo 3: Área Lateral de un Prisma Decagonal" 
+  texto="El área lateral de un prisma decagonal se calcula multiplicando el perímetro de la base por la altura del prisma. Si <strong>P</strong> es el perímetro de la base y <strong>h</strong> es la altura del prisma, entonces el área lateral <strong>A_lateral</strong> es:
+  
+  $$A_{lateral} = P h$$
+  
+  Supongamos que tenemos un prisma decagonal con un perímetro de la base de <strong>P = 50</strong> unidades (como en el ejemplo 1) y una altura de <strong>h = 10</strong> unidades. Entonces, el área lateral sería:
+
+  $$A_{lateral} = 50 * 10 = 500$$
+  
+  Por lo tanto, el área lateral del prisma es <strong>500</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/prisma_decagonal/figure_static.jpg" 
+  titulo="Ejemplo 4: Área Total de un Prisma Decagonal" 
+  texto="El área total de un prisma decagonal es la suma del doble del área de la base y el área lateral. Entonces, si <strong>A_base</strong> es el área de la base y <strong>A_lateral</strong> es el área lateral, entonces el área total <strong>A _total</strong> es:
+  
+  $$A_{total} = 2 A_{base} + A_{lateral}$$
+  
+  Supongamos que tenemos un prisma con un área de la base de <strong>A_base = 68.675</strong> unidades cuadradas (como en el ejemplo 2) y un área lateral de <strong>A_lateral = 500</strong> unidades cuadradas (como en el ejemplo 3). Entonces, el área total sería:
+  
+  $$A_{total} = 2 * 68.675 + 500 = 637.35$$
+  
+  Por lo tanto, el área total del prisma es <strong>637.35</strong> unidades cuadradas."></app-example>
+  
+  <app-example ruta="assets/images/prisma_decagonal/figure_static.jpg" 
+  titulo="Ejemplo 5: Volumen de un Prisma Decagonal" 
+  texto="El volumen de un prisma decagonal se calcula multiplicando el área de la base por la altura del prisma. Entonces, si <strong>A_base</strong> es el área de la base y <strong>h</strong> es la altura del prisma, entonces el volumen <strong>V</strong> es:
+  
+  $$V = A_{base} h$$
+  
+  Supongamos que tenemos un prisma decagonal con un área de la base de <strong>A_base = 68.675</strong> unidades cuadradas (como en el ejemplo 2) y una altura de <strong>h = 10</strong> unidades. Entonces, el volumen sería:
+
+  $$V = 68.675 * 10 = 686.75$$
+  
+  Por lo tanto, el volumen del prisma es <strong>686.75</strong> unidades cúbicas."></app-example>
+
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-prisma-decagonal')">Ejercicios</ion-button>
+</ion-content>

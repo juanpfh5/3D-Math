@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Pirámide pentagonal)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example ruta="assets/images/piramide_pentagonal/fig_1.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de una Pirámide Pentagonal" 
+  texto="La base de una pirámide pentagonal es un pentágono (un polígono de cinco lados). El perímetro de un pentágono se calcula sumando las longitudes de todos sus lados: <strong>P = 5s</strong>, donde <strong>s</strong> es la longitud de un lado del pentágono.
+  <br>
+  Supongamos que tenemos una pirámide pentagonal con una base donde cada lado del pentágono mide <strong>s = 6</strong> unidades. Entonces, el perímetro de la base de esta pirámide sería:
+  
+  $$P = 5 * 6 = 30$$
+  
+  Por lo tanto, el perímetro de la base de la pirámide es <strong>30</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/piramide_pentagonal/fig_2.jpg" 
+  titulo="Ejemplo 2: Área de la Base de una Pirámide Pentagonal" 
+  texto="El área de la base de una pirámide pentagonal se calcula usando la fórmula para el área de un pentágono regular:
+  
+  $$A_{base} = \frac{1}{4} \sqrt{5 (5 + 2 \sqrt{5})} a^2$$
+  
+  Supongamos que tenemos una pirámide pentagonal con un lado de <strong>s = 4</strong> unidades. Entonces, el área de la base sería:
+  
+  $$A_{base} = \frac{1}{4} \sqrt{5 (5 + 2 \sqrt{5})} 4^2 = 15.528$$
+  
+  Por lo tanto, el área de la base de la pirámide es aproximadamente <strong>15.528</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_pentagonal/fig_3.jpg" 
+  titulo="Ejemplo 3: Área Lateral de una Pirámide Pentagonal" 
+  texto="El área lateral de una pirámide pentagonal se calcula sumando las áreas de las cinco caras triangulares. La fórmula para el área de un triángulo es <strong>A_lateral = 1/2 * base * altura</strong>. La base de cada triángulo es el lado del pentágono de la base, y la altura de cada triángulo es la apotema lateral de la pirámide.
+  <br>
+  Supongamos que tenemos una pirámide pentagonal con un lado de <strong>s = 4</strong> unidades y una apotema lateral de <strong>l = 10</strong> unidades. El área de una cara triangular sería:
+  
+  $$a_{triangulo} = \frac{1}{2} * 4 * 10 = 20$$
+  
+  Ya que hay cinco caras triangulares, el área lateral total sería:
+  
+  $$A_{lateral} = 5 * 20 = 100$$
+  
+  Por lo tanto, el área lateral de la pirámide es <strong>100</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_pentagonal/fig_4.jpg" 
+  titulo="Ejemplo 4: Área Total de una Pirámide Pentagonal" 
+  texto="El área total de una pirámide pentagonal se calcula sumando el área de la base y el área lateral.
+  <br>
+  Si tomamos una pirámide con un área de la base de aproximadamente <strong>15.528</strong> unidades cuadradas (como en el ejemplo 2) y un área lateral de <strong>100</strong> unidades cuadradas (como en el ejemplo 3), entonces el área total de esta pirámide sería:
+  
+  $$A_{total} = 15.528 + 100 = 115.528$$
+  
+  Por lo tanto, el área total de la pirámide es aproximadamente <strong>115.528</strong> unidades cuadradas."></app-example>
+  
+  <app-example ruta="assets/images/piramide_pentagonal/fig_1.jpg" 
+  titulo="Ejemplo 5: Volumen de una Pirámide Pentagonal" 
+  texto="El volumen de una pirámide pentagonal se calcula con la fórmula:
+  
+  $$V = \frac{1}{3} A_{base}h$$
+  
+  donde la altura es la distancia perpendicular desde la base hasta el vértice de la pirámide.
+
+  Supongamos que tenemos una pirámide con un área de la base de aproximadamente <strong>15.528</strong> unidades cuadradas (como en el ejemplo 2) y una altura de <strong>h = 15</strong> unidades. Entonces, el volumen de esta pirámide sería:
+  
+  $$V = \frac{1}{3} * 15.528 * 15 = 77.64$$
+  
+  Por lo tanto, el volumen de la pirámide es aproximadamente <strong>77.64</strong> unidades cúbicas."></app-example>
+
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-piramide-pentagonal')">Ejercicios</ion-button>
+</ion-content>

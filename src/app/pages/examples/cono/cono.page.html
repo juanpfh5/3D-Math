@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Cono)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example ruta="assets/images/cono/fig_1.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de un Cono" 
+  texto="El perímetro de la base de un cono, que es un círculo, se calcula con la fórmula del perímetro (circunferencia) de un círculo: <strong>P = 2πr</strong>, donde <strong>r</strong> es el radio de la base.
+  <br>
+  Supongamos que tenemos un cono con un radio de <strong>r = 3</strong> unidades. Entonces, el perímetro de la base del cono sería:
+
+  $$P = 2\pi * 3 = 6\pi$$
+  
+  Por lo tanto, el perímetro de la base del cono es <strong>6π</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/cono/fig_2.jpg" 
+  titulo="Ejemplo 2: Área de la Base de un Cono" 
+  texto="El área de la base de un cono, que es un círculo, se calcula con la fórmula del área de un círculo: <strong>A = πr^2</strong>, donde <strong>r</strong> es el radio de la base.
+  <br>
+  Si tomamos un cono con un radio de <strong>r = 4</strong> unidades, entonces el área de la base del cono sería:
+  
+  $$A = \pi * 4^2 = 16\pi$$
+  
+  Por lo tanto, el área de la base del cono es <strong>16π</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/cono/fig_3.jpg" 
+  titulo="Ejemplo 3: Área Lateral de un Cono" 
+  texto="El área lateral de un cono se calcula con la fórmula: <strong>A_lateral = πrl</strong>, donde <strong>r</strong> es el radio de la base y <strong>l</strong> es la longitud de la generatriz (la distancia desde el vértice hasta cualquier punto de la circunferencia de la base).
+  <br>
+  Supongamos que tenemos un cono con un radio de <strong>r = 5</strong> unidades y una generatriz de <strong>l = 7</strong> unidades. Entonces, el área lateral del cono sería:
+  
+  $$A_{lateral} = \pi * 5 * 7 = 35\pi$$
+  
+  Por lo tanto, el área lateral del cono es <strong>35π</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/cono/fig_4.jpg" 
+  titulo="Ejemplo 4: Área Total de un Cono" 
+  texto="El área total de un cono se calcula sumando el área de la base y el área lateral. La fórmula para el área total es: <strong>A_total = πr(r+l)</strong>, donde <strong>r</strong> es el radio de la base y <strong>l</strong> es la generatriz.
+  <br>
+  Si tomamos un cono con un radio de <strong>r = 3</strong> unidades y una generatriz de <strong>l = 5</strong> unidades, entonces el área total del cono sería:
+  
+  $$A_{total} = \pi * 3 (3 + 5) = \pi * 3 * 8 = 24\pi$$
+  
+  Por lo tanto, el área total del cono es <strong>24π</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/cono/fig_1.jpg" 
+  titulo="Ejemplo 5: Volumen de un Cono" 
+  texto="El volumen de un cono se calcula con la fórmula: <strong>V = 1/3 πr^2 h</strong>, donde <strong>r</strong> es el radio de la base y <strong>h</strong> es la altura del cono.
+  <br>
+  Supongamos que tenemos un cono con un radio de <strong>r = 2</strong> unidades y una altura de <strong>h = 9</strong> unidades. Entonces, el volumen del cono sería:
+  
+  $$V = \frac{1}{3} \pi * 2^2 * 9 = \frac{1}{3} \pi * 4 * 9 = 12\pi$$
+  
+  Por lo tanto, el volumen del cono es <strong>12π</strong> unidades cúbicas."></app-example>
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-cono')">Ejercicios</ion-button>
+</ion-content>

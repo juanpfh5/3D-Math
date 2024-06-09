@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Pirámide octagonal)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example ruta="assets/images/piramide_octagonal/fig_1.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de una Pirámide Octagonal" 
+  texto="La base de una pirámide octagonal es un octágono (un polígono de ocho lados). El perímetro de un octágono se calcula sumando las longitudes de todos sus lados: <strong>P = 8s</strong>, donde <strong>s</strong> es la longitud de un lado del octágono.
+  <br>
+  Supongamos que tenemos una pirámide octagonal con una base donde cada lado del octágono mide <strong>s = 5</strong> unidades. Entonces, el perímetro de la base de esta pirámide sería:
+  
+  $$P = 8 * 5 = 40$$
+  
+  Por lo tanto, el perímetro de la base de la pirámide es <strong>40</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/piramide_octagonal/figure_static.jpg" 
+  titulo="Ejemplo 2: Área de la Base de una Pirámide Octagonal" 
+  texto="El área de la base de una pirámide octagonal se calcula usando la fórmula para el área de un octágono regular:
+  
+  $$A_{base} = 2 (1 + \sqrt{2}) a^2$$
+  
+  Supongamos que tenemos una pirámide octagonal con un lado de <strong>s = 4</strong> unidades. Entonces, el área de la base sería:
+  
+  $$A_{base} = 2 (1 + \sqrt{2}) 4^2 = 77.2544$$
+  
+  Por lo tanto, el área de la base de la pirámide es aproximadamente <strong>77.254</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_octagonal/fig_1.jpg" 
+  titulo="Ejemplo 3: Área Lateral de una Pirámide Octagonal" 
+  texto="El área lateral de una pirámide octagonal se calcula sumando las áreas de las ocho caras triangulares. La fórmula para el área de un triángulo es <strong>A_lateral = 1/2 * base * altura</strong>. La base de cada triángulo es el lado del octágono de la base, y la altura de cada triángulo es la apotema lateral de la pirámide.
+  <br>
+  Supongamos que tenemos una pirámide octagonal con un lado de <strong>s = 4</strong> unidades y una apotema lateral de <strong>l = 10</strong> unidades. El área de una cara triangular sería:
+  
+  $$A_{triangulo} = \frac{1}{2} * 4 * 10 = 20$$
+  
+  Ya que hay ocho caras triangulares, el área lateral total sería:
+  
+  $$A_{lateral} = 8 * 20 = 160$$
+
+  Por lo tanto, el área lateral de la pirámide es <strong>160</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_octagonal/figure_static.jpg" 
+  titulo="Ejemplo 4: Área Total de una Pirámide Octagonal" 
+  texto="El área total de una pirámide octagonal se calcula sumando el área de la base y el área lateral.
+  <br>
+  Si tomamos una pirámide con un área de la base de aproximadamente <strong>77.254</strong> unidades cuadradas (como en el ejemplo 2) y un área lateral de <strong>160</strong> unidades cuadradas (como en el ejemplo 3), entonces el área total de esta pirámide sería:
+  
+  $$A_{total} = 77.254+ + 60 = 237.2547$$
+  
+  Por lo tanto, el área total de la pirámide es aproximadamente <strong>237.254</strong> unidades cuadradas."></app-example>
+  
+  <app-example ruta="assets/images/piramide_octagonal/fig_1.jpg" 
+  titulo="Ejemplo 5: Volumen de una Pirámide Octagonal" 
+  texto="El volumen de una pirámide octagonal se calcula con la fórmula:
+  
+  $$V = \frac{1}{3} A_{base} h$$
+  
+  donde la altura es la distancia perpendicular desde la base hasta el vértice de la pirámide.
+
+  Supongamos que tenemos una pirámide con un área de la base de aproximadamente <strong>77.254</strong> unidades cuadradas (como en el ejemplo 2) y una altura de <strong>h = 12</strong> unidades. Entonces, el volumen de esta pirámide sería:
+  
+  $$V = \frac{1}{3} * 77.254 * 12 = 309.016$$
+
+  Por lo tanto, el volumen de la pirámide es aproximadamente <strong>309.016</strong> unidades cúbicas."></app-example>
+
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-piramide-octagonal')">Ejercicios</ion-button>
+</ion-content>

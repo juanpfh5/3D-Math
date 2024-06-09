@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Pirámide eneagonal)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example ruta="assets/images/piramide_eneagonal/figure_static.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de una Pirámide Eneagonal" 
+  texto="La base de una pirámide eneagonal es un eneágono (un polígono de nueve lados). El perímetro de un eneágono se calcula sumando las longitudes de todos sus lados: <strong>P = 9s</strong>, donde <strong>s</strong> es la longitud de un lado del eneágono.
+  <br>
+  Supongamos que tenemos una pirámide eneagonal con una base donde cada lado del eneágono mide <strong>s = 4</strong> unidades. Entonces, el perímetro de la base de esta pirámide sería:
+  
+  $$P = 9 * 4 = 36$$
+  
+  Por lo tanto, el perímetro de la base de la pirámide es <strong>36</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/piramide_eneagonal/figure_static.jpg" 
+  titulo="Ejemplo 2: Área de la Base de una Pirámide Eneagonal" 
+  texto="El área de la base de una pirámide eneagonal se calcula usando la fórmula para el área de un eneágono regular:
+  
+  $$A_{base} = \frac{9}{4} a^2 cot(\frac{\pi}{9})$$
+  
+  Supongamos que tenemos una pirámide eneagonal con un lado de <strong>a = 5</strong> unidades. La cotangente de <strong>π/9</strong>se puede calcular o aproximar utilizando una calculadora científica:
+  
+  $$cot(\frac{\pi}{9}) = 2.747$$
+  
+  Entonces, el área de la base sería:
+  
+  $$A_{base} = \frac{9}{4} * 5^2 * 2.747 = 154.519$$
+  
+  Por lo tanto, el área de la base de la pirámide es aproximadamente <strong>154.519</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_eneagonal/figure_static.jpg" 
+  titulo="Ejemplo 3: Área Lateral de una Pirámide Eneagonal" 
+  texto="El área lateral de una pirámide eneagonal se calcula sumando las áreas de las nueve caras triangulares. La fórmula para el área de un triángulo es <strong>A_lateral = 1/2 * base * altura</strong>. La base de cada triángulo es el lado del eneágono de la base, y la altura de cada triángulo es la apotema lateral de la pirámide.
+  <br>
+  Supongamos que tenemos una pirámide eneagonal con un lado de <strong>s = 3</strong> unidades y una apotema lateral de <strong>l = 8</strong> unidades. El área de una cara triangular sería:
+  
+  $$A_{triangulo} = \frac{1}{2} * 3 * 8 = 12$$
+  
+  Ya que hay nueve caras triangulares, el área lateral total sería:
+  
+  $$A_{lateral} = 9 * 12 = 108$$
+  
+  Por lo tanto, el área lateral de la pirámide es <strong>108 </strong>unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_eneagonal/figure_static.jpg" 
+  titulo="Ejemplo 4: Área Total de una Pirámide Eneagonal" 
+  texto="El área total de una pirámide eneagonal se calcula sumando el área de la base y el área lateral.
+  <br>
+  Si tomamos una pirámide con un área de la base de aproximadamente <strong>55.187</strong> unidades cuadradas y un área lateral de <strong>108</strong> unidades cuadradas, entonces el área total de esta pirámide sería:
+  
+  $$A_{total} = 55.187 + 108 = 163.187$$
+  
+  Por lo tanto, el área total de la pirámide es aproximadamente <strong>163.187</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_eneagonal/figure_static.jpg" 
+  titulo="Ejemplo 5: Volumen de una Pirámide Eneagonal" 
+  texto="El volumen de una pirámide eneagonal se calcula con la fórmula:
+  
+  $$V = \frac{1}{3} A_{base} h$$
+  
+  donde la altura es la distancia perpendicular desde la base hasta el vértice de la pirámide.
+
+  Supongamos que tenemos una pirámide con un área de la base de aproximadamente <strong>55.187</strong> unidades cuadradas y una altura de <strong>h = 12</strong> unidades. Entonces, el volumen de esta pirámide sería:
+  
+  $$V = \frac{1}{3} * 55.187 * 12 = 220.748$$
+  
+  Por lo tanto, el volumen de la pirámide es aproximadamente 220.748 unidades cúbicas."></app-example>
+
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-piramide-eneagonal')">Ejercicios</ion-button>
+</ion-content>

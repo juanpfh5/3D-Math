@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Prisma cuadrangular</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-figure
+  ruta="assets/images/prisma_cuadrangular/figure.gif"
+  titulo="Prisma cuadrangular"
+  texto="Un prisma cuadrangular es una figura tridimensional que tiene dos bases cuadradas congruentes y paralelas entre sí. Las caras laterales del prisma son rectángulos, con las alturas iguales a la altura del prisma y las bases como lados.
+  <br><strong>Perímetro de la base</strong>: 
+  $$P = 4 s$$
+  <strong>Área de la base</strong>: 
+  $$A_{base} = s^2$$
+  <strong>Área lateral</strong>: 
+  $$A_{lateral} = 4 s h$$
+  <strong>Área total</strong>: 
+  $$A_{total} = 2 A_{base} + A_{lateral}$$
+  <strong>Volumen</strong>: 
+  $$V = A_{base} h$$
+  Donde <strong>s</strong> es la longitud de un lado del cuadrado y <strong>h</strong> es la altura del prisma."
+  audioRuta="assets/audios/prisma_cuadrangular/audio.mp3">
+</app-figure>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/example-prisma-cuadrangular')">Ejemplos</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-prisma-cuadrangular')">Ejercicios</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

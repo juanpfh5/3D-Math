@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicios (Prisma hexagonal)</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentHelpPopover($event)">
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Instrucciones</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Resuelve los siguientes ejercicios. Las respuestas deben contar con 2 decimales.</p>
+    </ion-card-content>
+  </ion-card>
+  
+  <app-exercise 
+    [ruta1]="ruta1" [pregunta1]="pregunta1" [respuesta1]="respuesta1" 
+    [ruta2]="ruta2" [pregunta2]="pregunta2" [respuesta2]="respuesta2" 
+    [ruta3]="ruta3" [pregunta3]="pregunta3" [respuesta3]="respuesta3" 
+    [ruta4]="ruta4" [pregunta4]="pregunta4" [respuesta4]="respuesta4">
+  </app-exercise>
+</ion-content>

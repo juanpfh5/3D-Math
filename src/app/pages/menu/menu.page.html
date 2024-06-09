@@ -1,0 +1,110 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Menú</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/esfera')">Esfera</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/cubo')">Cubo</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/cono')">Cono</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/cilindro')">Cilindro</ion-button>
+      </ion-col>
+    </ion-row>
+      
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/piramide-triangular')">Pirámide <br>triangular</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/prisma-triangular')">Prisma <br>triangular</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/piramide-cuadrangular')">Pirámide <br>cuadrangular</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/prisma-cuadrangular')">Prisma <br>cuadrangular</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/piramide-pentagonal')">Pirámide <br>pentagonal</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/prisma-pentagonal')">Prisma <br>pentagonal</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/piramide-hexagonal')">Pirámide <br>hexagonal</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/prisma-hexagonal')">Prisma <br>hexagonal</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/piramide-heptagonal')">Pirámide <br>heptagonal</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/prisma-heptagonal')">Prisma <br>heptagonal</ion-button>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/piramide-octagonal')">Pirámide <br>octagonal</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/prisma-octagonal')">Prisma <br>octagonal</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/piramide-eneagonal')">Pirámide <br>eneagonal</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/prisma-eneagonal')">Prisma <br>eneagonal</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/piramide-decagonal')">Pirámide <br>decagonal</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round" expand="block" (click)="navigateToAnotherPage('/prisma-decagonal')">Prisma <br>decagonal</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

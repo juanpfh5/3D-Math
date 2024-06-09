@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cubo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-figure
+  ruta="assets/images/cubo/figure.gif"
+  titulo="Cubo"
+  texto="Un cubo es una figura tridimensional que tiene seis caras cuadradas idénticas. Todas las aristas del cubo tienen la misma longitud y todos los ángulos entre las caras son ángulos rectos (90 grados).
+  <br><strong>Perímetro de la base</strong>: 
+  $$P = 4 s$$
+  <strong>Área de la base</strong>: 
+  $$A_{base} = s^2$$
+  <strong>Área lateral</strong>: 
+  $$A_{lateral} = 4 s^2$$
+  <strong>Área total</strong>: 
+  $$A_{total} = 2 s^2$$
+  <strong>Volumen</strong>: 
+  $$V = s^3$$
+  Donde <strong>s</strong> es la longitud de un lado del cuadrado."
+  audioRuta="assets/audios/cubo/audio.mp3">
+</app-figure>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/example-cubo')">Ejemplos</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-cubo')">Ejercicios</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

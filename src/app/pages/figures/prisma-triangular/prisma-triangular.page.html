@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Prisma triangular</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-figure
+  ruta="assets/images/prisma_triangular/figure.gif"
+  titulo="Prisma triangular"
+  texto="Un prisma triangular es una figura tridimensional que tiene dos bases triangulares congruentes y paralelas entre sí. Las caras laterales del prisma son paralelogramos, con las alturas iguales a la altura del prisma y las bases como lados.
+  <br><strong>Perímetro de la base</strong>: 
+  $$P = x + y + z$$
+  <strong>Área de la base</strong>: 
+  $$A_{base} = \frac{1}{2} b t$$
+  <strong>Área lateral</strong>: 
+  $$A_{lateral} = P h$$
+  <strong>Área total</strong>: 
+  $$A_{total} = 2 A_{base} + A_{lateral}$$
+  <strong>Volumen</strong>: 
+  $$V = A_{base} h$$
+  Donde <strong>b</strong> es la longitud de la base del triángulo, <strong>t</strong> es la altura del triángulo y <strong>h</strong> es la altura del prisma. Si los lados del triángulo tienen longitudes <strong>x</strong>, <strong>y</strong> y <strong>z</strong>, entonces el perímetro se calcula como la suma de estas longitudes."
+  audioRuta="assets/audios/prisma_triangular/audio.mp3">
+</app-figure>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/example-prisma-triangular')">Ejemplos</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-prisma-triangular')">Ejercicios</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

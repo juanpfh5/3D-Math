@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cilindro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-figure
+  ruta="assets/images/cilindro/figure.gif"
+  titulo="Cilindro"
+  texto="Un cilindro es una figura geométrica tridimensional que consta de dos bases paralelas y congruentes, que son círculos, y una superficie lateral curva que conecta estas bases.
+  <br><strong>Perímetro de la base</strong>: 
+  $$P = 2 \pi r$$
+  <strong>Área de la base</strong>: 
+  $$A_{base} = \pi r^2$$
+  <strong>Área lateral</strong>: 
+  $$A_{lateral} = 2 \pi r h$$
+  <strong>Área total</strong>: 
+  $$A_{total} = 2 \pi r^2 +  2 \pi r h$$
+  <strong>Volumen</strong>: 
+  $$V = \pi r^2 h$$
+  Donde <strong>r</strong> es el radio de la base, <strong>π</strong> (pi) es una constante aproximadamente igual a 3.1416 y <strong>h</strong> es la altura del cilindro."
+  audioRuta="assets/audios/cilindro/audio.mp3">
+</app-figure>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/example-cilindro')">Ejemplos</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-cilindro')">Ejercicios</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

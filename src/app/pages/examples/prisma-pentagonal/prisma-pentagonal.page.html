@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Prisma pentagonal)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example ruta="assets/images/prisma_pentagonal/fig_1.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de un Prisma Pentagonal" 
+  texto="El perímetro de la base de un prisma pentagonal es simplemente la suma de las longitudes de los cinco lados del pentágono. Si <strong>s</strong> es la longitud de un lado del pentágono, entonces el perímetro <strong>P</strong> de la base es:
+  
+  $$P = 5 s$$
+  
+  Supongamos que tenemos un prisma pentagonal con un pentágono base donde cada lado mide <strong>s = 6</strong> unidades. Entonces, el perímetro de la base sería:
+  
+  $$P = 5 * 6 = 30$$
+  
+  Por lo tanto, el perímetro de la base del prisma es <strong>30</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/prisma_pentagonal/fig_2.jpg" 
+  titulo="Ejemplo 2: Área de la Base de un Prisma Pentagonal"
+  texto="El área de la base de un prisma pentagonal se calcula utilizando la fórmula:
+  
+  $$A_{base} = \frac{1}{4} \sqrt{5 (5 + 2 \sqrt{5})} s^2$$
+  
+  Supongamos que tenemos un prisma pentagonal con un pentágono base donde cada lado mide <strong>s = 6</strong> unidades. Entonces, utilizando la fórmula mencionada, el área de la base sería:
+  
+  $$A_{base} = \frac{1}{4} \sqrt{5 (5 + 2 \sqrt{5})} * 6^2 = 11.340$$
+  
+  Por lo tanto, el área de la base del prisma es aproximadamente <strong>11.340</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/prisma_pentagonal/fig_3.jpg" 
+  titulo="Ejemplo 3: Área Lateral de un Prisma Pentagonal" 
+  texto="El área lateral de un prisma pentagonal se calcula multiplicando el perímetro de la base por la altura del prisma. Si <strong>P</strong> es el perímetro de la base y <strong>h</strong> es la altura del prisma, entonces el área lateral <strong>A_lateral</strong> es:
+  
+  $$A_{lateral} = P h$$
+  
+  Supongamos que tenemos un prisma pentagonal con un perímetro de la base de <strong>P = 30</strong> unidades (como en el ejemplo 1) y una altura de <strong>h = 10</strong> unidades. Entonces, el área lateral sería:
+  
+  $$A_{lateral} = 30 * 10 = 300$$
+  
+  Por lo tanto, el área lateral del prisma es <strong>300</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/prisma_pentagonal/fig_4.jpg" 
+  titulo="Ejemplo 4: Área Total de un Prisma Pentagonal" 
+  texto="El área total de un prisma pentagonal es la suma del área de la base y el área lateral. Entonces, si <strong>A_base</strong> es el área de la base y <strong>A_lateral</strong> es el área lateral, entonces el área total <strong>A_total</strong> es:
+  
+  $$A_{total} = 2 A_{base} + A_{lateral}$$
+  
+  Supongamos que tenemos un prisma con un área de la base de <strong>A_base = 11.340</strong> unidades cuadradas (como en el ejemplo 2) y un área lateral de <strong>A_lateral = 300</strong> unidades cuadradas (como en el ejemplo 3). Entonces, el área total sería:
+  
+  $$A_{total} = 2 * 11.340 + 300 = 22.980$$
+  
+  Por lo tanto, el área total del prisma es <strong>22.980</strong> unidades cuadradas."></app-example>
+  
+  <app-example ruta="assets/images/prisma_pentagonal/fig_1.jpg" 
+  titulo="Ejemplo 5: Volumen de un Prisma Pentagonal" 
+  texto="El volumen de un prisma pentagonal se calcula multiplicando el área de la base por la altura del prisma. Si <strong>A_base</strong> es el área de la base y <strong>h</strong> es la altura del prisma, entonces el volumen <strong>V</strong> es:
+  
+  $$V = A_{base} h$$
+  
+  Supongamos que tenemos un prisma pentagonal con un área de la base de <strong>A_base = 11.340</strong> unidades cuadradas (como en el ejemplo 2) y una altura de <strong>h = 10</strong> unidades. Entonces, el volumen sería:
+  
+  $$V = 11.340 * 10 = 113.400$$
+  
+  Por lo tanto, el volumen del prisma es <strong>113.400</strong> unidades cúbicas."></app-example>
+
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-prisma-pentagonal')">Ejercicios</ion-button>
+</ion-content>

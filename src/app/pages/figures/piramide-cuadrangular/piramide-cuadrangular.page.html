@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pirámide cuadrangular</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-figure
+  ruta="assets/images/piramide_cuadrangular/figure.gif"
+  titulo="Pirámide cuadrangular"
+  texto="Una pirámide cuadrangular es una figura tridimensional que tiene una base cuadrada y cuatro caras laterales que son triángulos, los cuales convergen en un punto común llamado vértice o ápice.
+  <br><strong>Perímetro de la base</strong>: 
+  $$P = 4 a$$
+  <strong>Área de la base</strong>: 
+  $$A_{base} = a^2$$
+  <strong>Área lateral</strong>: 
+  $$A_{lateral} = 4 (\frac{1}{2} a * ap) = 2 a * ap$$
+  <strong>Área total</strong>: 
+  $$A_{total} = A_{base} + A_{lateral}$$
+  <strong>Volumen</strong>: 
+  $$V = \frac{1}{3} a^2 h$$
+  Donde <strong>a</strong> es la longitud de un lado del cuadrado, <strong>ap</strong> es la apotema (la altura de cada cara triangular desde el centro de la base hasta el vértice de la pirámide) y <strong>h</strong> es la altura desde el centro de la base cuadrada hasta el vértice de la pirámide."
+  audioRuta="assets/audios/piramide_cuadrangular/audio.mp3">
+</app-figure>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/example-piramide-cuadrangular')">Ejemplos</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-piramide-cuadrangular')">Ejercicios</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

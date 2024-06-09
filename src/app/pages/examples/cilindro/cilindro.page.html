@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Cilindro)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example ruta="assets/images/cilindro/fig_1.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de un Cilindro" 
+  texto="El perímetro de la base de un cilindro, que es un círculo, se calcula con la fórmula del perímetro (circunferencia) de un círculo: <strong>P = 2πr</strong>, donde <strong>r</strong> es el radio de la base.
+  <br>
+  Supongamos que tenemos un cilindro con un radio de <strong>r = 4</strong> unidades. Entonces, el perímetro de la base del cilindro sería:
+  
+  $$P = 2\pi * 4 = 8\pi$$
+  
+  Por lo tanto, el perímetro de la base del cilindro es <strong>8π</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/cilindro/fig_2.jpg" 
+  titulo="Ejemplo 2: Área de la Base de un Cilindro" 
+  texto="El área de la base de un cilindro, que es un círculo, se calcula con la fórmula del área de un círculo: <strong>A_base = πr^2</strong>, donde <strong>r</strong> es el radio de la base.
+  <br>
+  Si tomamos un cilindro con un radio de <strong>r = 5</strong> unidades, entonces el área de la base del cilindro sería:
+  
+  $$A_{base} = \pi * 5^2 = 25\pi$$
+  
+  Por lo tanto, el área de la base del cilindro es <strong>25π</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/cilindro/fig_3.jpg" 
+  titulo="Ejemplo 3: Área Lateral de un Cilindro" 
+  texto="El área lateral de un cilindro se calcula con la fórmula: <strong>A_lateral = 2πrh</strong>, donde <strong>r</strong> es el radio de la base y <strong>h</strong> es la altura del cilindro.
+  <br>
+  Supongamos que tenemos un cilindro con un radio de <strong>r = 3</strong> unidades y una altura de <strong>h = 7</strong> unidades. Entonces, el área lateral del cilindro sería:
+  
+  $$A_{lateral} = 2\pi * 3 * 7 = 42\pi$$
+  
+  Por lo tanto, el área lateral del cilindro es <strong>42π</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/cilindro/fig_4.jpg" 
+  titulo="Ejemplo 4: Área Total de un Cilindro" 
+  texto="El área total de un cilindro se calcula sumando el área lateral y las áreas de las dos bases. La fórmula para el área total es: <strong>A_total = 2πr(r+h)</strong>, donde <strong>r</strong> es el radio de la base y <strong>h</strong> es la altura del cilindro.
+  <br>
+  Si tomamos un cilindro con un radio de <strong>r = 2</strong> unidades y una altura de <strong>h = 6</strong> unidades, entonces el área total del cilindro sería:
+  
+  $$A_{total} = 2\pi * 2 (2 + 6) = 32\pi$$
+  
+  Por lo tanto, el área total del cilindro es <strong>32π</strong> unidades cuadradas."></app-example>
+  
+  <app-example ruta="assets/images/cilindro/fig_5.jpg" 
+  titulo="Ejemplo 5: Volumen de un Cilindro" 
+  texto="El volumen de un cilindro se calcula con la fórmula: <strong>V = πr^2 h</strong>, donde <strong>r</strong> es el radio de la base y <strong>h</strong> es la altura del cilindro.
+  <br>
+  Supongamos que tenemos un cilindro con un radio de <strong>r = 4</strong> unidades y una altura de <strong>h = 10</strong> unidades. Entonces, el volumen del cilindro sería:
+  
+  $$V = \pi * 4^2 * 10 = \pi * 16 * 10 = 160 \pi$$
+  
+  Por lo tanto, el volumen del cilindro es <strong>160π</strong> unidades cúbicas."></app-example>
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-cilindro')">Ejercicios</ion-button>
+</ion-content>

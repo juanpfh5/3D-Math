@@ -35,3 +35,55 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+// ion-content.background{
+//     --background: url('assets/images/general/bg-image.webp') 0 0/100% 100% no-repeat;
+// }
+// ion-content {
+//     --background: url('assets/images/general/bg-image.webp') no-repeat 100% 100%;
+// }
+
+/* Imagen de fondo para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    ion-content:not(.exclude-bg) {
+        --background: rgba(0, 0, 0, 0.5) url('assets/images/general/bg-image-mobile.webp') no-repeat center center fixed;
+        --background-size: cover;
+    }
+}
+
+/* Imagen de fondo para PCs */
+@media only screen and (min-width: 601px) {
+    ion-content:not(.exclude-bg) {
+        --background: url('assets/images/general/bg-image-desktop.webp') no-repeat center center fixed;
+        --background-size: cover;
+    }
+}
+
+ion-button {
+    --background: #A66F50;
+    --background-hover: #A66F50;
+    --background-activated: #A66F50;
+    --background-focused: #A66F50;
+    --color: rgb(255, 255, 255);
+}
+
+.btn-ex {
+    --background: #474241;
+    --background-hover: hsl(calc(var(--hue) + 20), 70%, 60%);
+    --background-activated: hsl(calc(var(--hue) + 40), 70%, 60%);
+    --background-focused: hsl(calc(var(--hue) + 60), 70%, 60%);
+    --color: rgb(255, 255, 255);
+}
+
+ion-card {
+    --background: #F9F1ED;
+    color: #2C2826;
+    ion-card-title {
+        color: #2C2826;
+    }
+}
+
+ion-toolbar {
+    --background: #403B39;
+    --color: #E0DCD7;
+}

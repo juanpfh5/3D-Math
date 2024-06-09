@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Prisma octagonal)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example ruta="assets/images/prisma_octagonal/figure_static.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de un Prisma Octagonal" 
+  texto="El perímetro de la base de un prisma octagonal es simplemente la suma de las longitudes de los ocho lados del octágono. Si <strong>s</strong> es la longitud de un lado del octágono, entonces el perímetro <strong>P</strong> de la base es:
+  
+  $$P = 8 s$$
+  
+  Supongamos que tenemos un prisma octagonal con un octágono base donde cada lado mide <strong>s = 5</strong> unidades. Entonces, el perímetro de la base sería:
+  
+  $$P = 8 * 5 = 40$$
+  
+  Por lo tanto, el perímetro de la base del prisma es <strong>40</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/prisma_octagonal/figure_static.jpg" 
+  titulo="Ejemplo 2: Área de la Base de un Prisma Octagonal" 
+  texto="El área de la base de un prisma octagonal se puede calcular de varias maneras. Una forma es dividir el octágono en triángulos isósceles y calcular el área de uno de esos triángulos, luego multiplicar por 8. Otro método es utilizando la fórmula general para el área de un octágono regular. Para un octágono regular, el área <strong>A_base</strong> de la base es:
+  
+  $$A_{base} = 2 (1 + \sqrt{2}) a^2$$
+  
+  donde <strong>s</strong> es la longitud de un lado del octágono.
+  <br>
+  Supongamos que tenemos un prisma octagonal con un octágono base donde cada lado mide <strong>s = 5</strong> unidades. Entonces, el área de la base sería:
+  
+  $$A_{base} = 2 (1 + \sqrt{2}) * 5^2 = 50 (1 + \sqrt{2})$$
+  
+  Por lo tanto, el área de la base del prisma es <strong>50 (1 + √(2))</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/prisma_octagonal/figure_static.jpg" 
+  titulo="Ejemplo 3: Área Lateral de un Prisma Octagonal" 
+  texto="El área lateral de un prisma octagonal se calcula multiplicando el perímetro de la base por la altura del prisma. Si <strong>P</strong> es el perímetro de la base y <strong>h</strong> es la altura del prisma, entonces el área lateral <strong>A_lateral</strong> es:
+  
+  $$A_{lateral} = P h$$
+  
+  Supongamos que tenemos un prisma octagonal con un perímetro de la base de <strong>P = 40</strong> unidades (como en el ejemplo 1) y una altura de <strong>h = 8</strong> unidades. Entonces, el área lateral sería:
+  
+  $$A_{lateral} = 40 * 8 = 320$$
+  
+  Por lo tanto, el área lateral del prisma es <strong>320</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/prisma_octagonal/figure_static.jpg" 
+  titulo="Ejemplo 4: Área Total de un Prisma Octagonal" 
+  texto="El área total de un prisma octagonal es la suma del área de la base y el área lateral. Entonces, si <strong>A_base</strong> es el área de la base y <strong>A_lateral</strong> es el área lateral, entonces el área total <strong>A_total</strong> es:
+  
+  $$A_{total} = 2 A_{base} + A_{lateral}$$
+  
+  Supongamos que tenemos un prisma con un área de la base de <strong>50 (1 + √(2))</strong> unidades cuadradas (como en el ejemplo 2) y un área lateral de <strong>A_lateral = 320</strong> unidades cuadradas (como en el ejemplo 3). Entonces, el área total sería:
+  
+  $$A_{total} = 2 * 50 (1 + \sqrt{2}) + 320$$
+  
+  Por lo tanto, el área total del prisma es <strong>100 * (1 + √(2)) + 320</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/prisma_octagonal/figure_static.jpg" 
+  titulo="Ejemplo 5: Volumen de un Prisma Octagonal" 
+  texto="El volumen de un prisma octagonal se calcula multiplicando el área de la base por la altura del prisma. Si <strong>A_base</strong> es el área de la base y <strong>h</strong> es la altura del prisma, entonces el volumen <strong>V</strong> es:
+  
+  $$V = A_{base} h$$
+  
+  Supongamos que tenemos un prisma octagonal con un área de la base de <strong>A_base = 50 (1 + √(2))</strong> unidades cuadradas (como en el ejemplo 2) y una altura de <strong>h = 8</strong> unidades. Entonces, el volumen sería:
+  
+  $$V = 50 (1 + \sqrt{2}) * 8$$
+  
+  Por lo tanto, el volumen del prisma es <strong>400 * (1 + √(2))</strong> unidades cuadradas."></app-example>
+
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-prisma-octagonal')">Ejercicios</ion-button>
+</ion-content>

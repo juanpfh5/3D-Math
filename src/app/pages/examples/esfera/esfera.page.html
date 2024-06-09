@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Esfera)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-example ruta="assets/images/esfera/fig_1.jpg"
+  titulo="Ejemplo 1: Perímetro (Circunferencia) de una Esfera"
+  texto="Para obtener el perímetro de la circunferencia de una esfera, necesitamos conocer el radio de la esfera (que es igual al radio de la circunferencia). La fórmula del perímetro de una circunferencia es <strong>P = 2πr</strong>, donde <strong>r</strong> es el radio de la circunferencia.
+  <br>
+  Supongamos que tenemos una esfera con un radio de <strong>r = 5</strong> unidades. Entonces, el perímetro de la circunferencia de esta esfera sería:
+  
+  $$P = 2\pi * 5 = 10 \pi$$
+  
+  Por lo tanto, el perímetro de la circunferencia de la esfera es <strong>10π</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/esfera/fig_3.jpg" 
+  titulo="Ejemplo 2: Área de la Base de una Esfera" 
+  texto="El área de la base de una esfera es simplemente el área de un círculo con el mismo radio que la esfera. La fórmula para el área de un círculo es <strong>A = πr^2</strong>, donde <strong>r</strong> es el radio del círculo (y de la esfera).
+  <br>
+  Si tomamos el mismo ejemplo de la esfera con un radio de <strong>r = 5</strong> unidades, entonces el área de la base de esta esfera sería:
+
+  $$A = \pi * 5^2 = 25 \pi$$
+  
+  Por lo tanto, el área de la base de la esfera es <strong>25π</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/esfera/fig_4.jpg" 
+  titulo="Ejemplo 3: Volumen de una Esfera" 
+  texto="El volumen de una esfera se puede calcular con la fórmula <strong>V = (4/3) π r^3</strong>, donde <strong>r</strong> es el radio de la esfera.
+  <br>
+  Tomemos el mismo ejemplo con una esfera de radio <strong>r = 5</strong> unidades. El volumen de esta esfera sería:
+  
+  $$V = \frac{4}{3} \pi * 5^3 = \frac{500}{3} \pi$$
+  
+  Por lo tanto, el volumen de la esfera es <strong>500/3 π</strong> unidades cúbicas."></app-example>
+
+  <app-example ruta="assets/images/esfera/fig_6.jpg" 
+  titulo="Ejemplo 4: Volumen de una Esfera" 
+  texto="Supongamos que tenemos una esfera con un radio de <strong>r = 7</strong> unidades. Utilizaremos la fórmula del volumen de una esfera <strong>V = (4/3) π r^3</strong> para encontrar su volumen.
+  <br>
+  Sustituyendo el valor del radio en la fórmula, obtenemos:
+  
+  $$V = \frac{4}{3} \pi * 7^3 = \frac{1372}{3} \pi$$
+  
+  Por lo tanto, el volumen de la esfera con radio <strong>r = 7</strong> unidades es <strong>1372/3 π</strong> unidades cúbicas."></app-example>
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-esfera')">Ejercicios</ion-button>
+</ion-content>

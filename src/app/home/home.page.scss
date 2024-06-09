@@ -25,3 +25,20 @@
 #container a {
   text-decoration: none;
 }
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 4.5rem;
+  color: #EE8D52; 
+  background-color: antiquewhite;
+  font-weight: bold;
+}
+
+ion-button {
+  position: absolute;
+  bottom: 70px;
+  left: 50%; /* Opcional: para centrar horizontalmente el botón */
+  transform: translateX(-50%); /* Opcional: para centrar horizontalmente el botón */
+}

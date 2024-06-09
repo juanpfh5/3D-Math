@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Pirámide cuadrangular)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example ruta="assets/images/piramide_cuadrangular/fig_1.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de una Pirámide Cuadrangular" 
+  texto="La base de una pirámide cuadrangular es un cuadrado. El perímetro de un cuadrado se calcula con la fórmula <strong>P = 4s</strong>, donde <strong>s</strong> es la longitud del lado del cuadrado.
+  <br>
+  Supongamos que tenemos una pirámide cuadrangular con una base de <strong>s = 5</strong> unidades. Entonces, el perímetro de la base de esta pirámide sería:
+  
+  $$P = 4 * 5 = 20$$
+  
+  Por lo tanto, el perímetro de la base de la pirámide es <strong>20</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/piramide_cuadrangular/fig_2.jpg" 
+  titulo="Ejemplo 2: Área de la Base de una Pirámide Cuadrangular" 
+  texto="El área de la base de una pirámide cuadrangular se calcula con la fórmula para el área de un cuadrado: <strong>A_base = s^2</strong>, donde <strong>s</strong> es la longitud del lado del cuadrado.
+  <br>
+  Si tomamos una pirámide con una base de <strong>s = 6</strong> unidades, entonces el área de la base de esta pirámide sería:
+  
+  $$A_{base} = 6^2 = 36$$
+  
+  Por lo tanto, el área de la base de la pirámide es <strong>36</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_cuadrangular/fig_3.jpg" 
+  titulo="Ejemplo 3: Área Lateral de una Pirámide Cuadrangular" 
+  texto="El área lateral de una pirámide cuadrangular se calcula sumando las áreas de las cuatro caras triangulares. La fórmula para el área de un triángulo es <strong>A_lateral = 1/2 * base * altura</strong>. La base de cada triángulo es el lado del cuadrado de la base, y la altura de cada triángulo es la altura de la cara triangular (también llamada apotema de la pirámide).
+  <br>
+  Supongamos que tenemos una pirámide cuadrangular con una base de <strong>s = 4</strong> unidades y una apotema de <strong>a = 5</strong> unidades. El área de una cara triangular sería:
+  
+  $$A_{triangulo} = \frac{1}{2} 4 * 5 = 10$$
+  
+  Ya que hay cuatro caras triangulares, el área lateral total sería:
+  
+  $$A_{lateral} = 4 * 10 = 40$$
+  
+  Por lo tanto, el área lateral de la pirámide es <strong>40</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_cuadrangular/fig_4.jpg" 
+  titulo="Ejemplo 4: Área Total de una Pirámide Cuadrangular" 
+  texto="El área total de una pirámide cuadrangular se calcula sumando el área de la base y el área lateral.
+  <br>
+  Si tomamos una pirámide con un área de la base de <strong>36</strong> unidades cuadradas (como en el ejemplo 2) y un área lateral de <strong>40</strong> unidades cuadradas (como en el ejemplo 3), entonces el área total de esta pirámide sería:
+  
+  $$A_{total} = 36 + 40 = 76$$
+  
+  Por lo tanto, el área total de la pirámide es <strong>76</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_cuadrangular/fig_1.jpg" 
+  titulo="Ejemplo 5: Volumen de una Pirámide Cuadrangular" 
+  texto="El volumen de una pirámide cuadrangular se calcula con la fórmula: <strong>V = 1/3 * A_base * altura</strong>, donde la altura es la distancia perpendicular desde la base hasta el vértice de la pirámide.
+  <br>
+  Supongamos que tenemos una pirámide con un área de la base de <strong>36</strong> unidades cuadradas (como en el ejemplo 2) y una altura de <strong>h = 9</strong> unidades. Entonces, el volumen de esta pirámide sería:
+  
+  $$V = \frac{1}{3} * 36 * 9 = \frac{1}{3} * 324 = 108$$
+
+  Por lo tanto, el volumen de la pirámide es <strong>108</strong> unidades cúbicas."></app-example>
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-piramide-cuadrangular')">Ejercicios</ion-button>
+</ion-content>

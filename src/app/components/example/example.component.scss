@@ -1,0 +1,16 @@
+.content-wrapper {
+    padding: 16px; /* Ajusta este valor según el margen de la tarjeta */
+  }
+  
+  .full-width-image {
+    width: calc(100% - 32px); /* 100% del ancho menos el padding de ambos lados */
+    margin: 0 auto; /* Centrar la imagen */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+  }
+  
+  ion-card-content div {
+    white-space: pre-line; /* Respetar los saltos de línea en el texto */
+  }
+  .content-wrapper {
+    position: relative;
+  }

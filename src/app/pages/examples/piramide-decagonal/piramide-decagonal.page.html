@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Pirámide decagonal)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example ruta="assets/images/piramide_decagonal/figure_static.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de una Pirámide Decagonal" 
+  texto="La base de una pirámide decagonal es un decágono (un polígono de diez lados). El perímetro de un decágono se calcula sumando las longitudes de todos sus lados: <strong>P = 10s</strong>, donde <strong>s</strong> es la longitud de un lado del decágono.
+  <br>
+  Supongamos que tenemos una pirámide decagonal con una base donde cada lado del decágono mide <strong>s = 3</strong> unidades. Entonces, el perímetro de la base de esta pirámide sería:
+  
+  $$P = 10 * 3 = 30$$
+  
+  Por lo tanto, el perímetro de la base de la pirámide es <strong>30</strong> unidades."></app-example>
+
+  <app-example ruta="assets/images/piramide_decagonal/figure_static.jpg" 
+  titulo="Ejemplo 2: Área de la Base de una Pirámide Decagonal" 
+  texto="El área de la base de una pirámide decagonal se calcula usando la fórmula para el área de un decágono regular: 
+  
+  $$A_{base} = \frac{5}{2} a^2 cot(\frac{\pi}{10})$$
+  
+  Supongamos que tenemos una pirámide decagonal con un lado de <strong>s = 4</strong> unidades. La cotangente de <strong>π/10</strong> se puede calcular o aproximar utilizando una calculadora científica: 
+  
+  $$cot(\frac{\pi}{10}) = 3.0777$$
+
+  Entonces, el área de la base sería:
+  
+  $$A_{base} = \frac{5}{2} * 4^2 * 3.0777 = 123.108$$
+  
+  Por lo tanto, el área de la base de la pirámide es aproximadamente <strong>123.108</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_decagonal/figure_static.jpg" 
+  titulo="Ejemplo 3: Área Lateral de una Pirámide Decagonal" 
+  texto="El área lateral de una pirámide decagonal se calcula sumando las áreas de las diez caras triangulares. La fórmula para el área de un triángulo es <strong>A= 1/2 * base * altura</strong>. La base de cada triángulo es el lado del decágono de la base, y la altura de cada triángulo es la apotema lateral de la pirámide.
+  <br>
+  Supongamos que tenemos una pirámide decagonal con un lado de <strong>s = 4</strong> unidades y una apotema lateral de <strong>l = 10</strong> unidades. El área de una cara triangular sería: <strong>A_triángulo = 1/2 * 4 * 10 = 20</strong>
+  <br>
+  Ya que hay diez caras triangulares, el área lateral total sería:
+  
+  $$A_{lateral} = 10 * 20 = 200$$
+  
+  Por lo tanto, el área lateral de la pirámide es <strong>200</strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_decagonal/figure_static.jpg" 
+  titulo="Ejemplo 4: Área Total de una Pirámide Decagonal" 
+  texto="El área total de una pirámide decagonal se calcula sumando el área de la base y el área lateral.
+  <br>
+  Si tomamos una pirámide con un área de la base de aproximadamente <strong>123.108</strong> unidades cuadradas (como en el ejemplo 2) y un área lateral de <strong>200</strong> unidades cuadradas (como en el ejemplo 3), entonces el área total de esta pirámide sería:
+  
+  $$A_{total} = 123.108 + 200 = 323.108$$
+  
+  Por lo tanto, el área total de la pirámide es aproximadamente <strong>323.108<strong> unidades cuadradas."></app-example>
+
+  <app-example ruta="assets/images/piramide_decagonal/figure_static.jpg" 
+  titulo="Ejemplo 5: Volumen de una Pirámide Decagonal" 
+  texto="El volumen de una pirámide decagonal se calcula con la fórmula: <strong>V = 1/3 * área de la base * altura</strong>, donde la altura es la distancia perpendicular desde la base hasta el vértice de la pirámide.
+  <br>
+  Supongamos que tenemos una pirámide con un área de la base de aproximadamente <strong>123.108</strong> unidades cuadradas (como en el ejemplo 2) y una altura de <strong>h = 15</strong> unidades. Entonces, el volumen de esta pirámide sería:
+  
+  $$V = \frac{1}{3} * 123.108 * 15 = 615.54$$
+  
+  Por lo tanto, el volumen de la pirámide es aproximadamente <strong>615.54</strong> unidades cúbicas."></app-example>
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-piramide-decagonal')">Ejercicios</ion-button>
+</ion-content>

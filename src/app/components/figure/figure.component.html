@@ -1,0 +1,19 @@
+<div class="content-wrapper">
+  <img alt="figure" [src]="ruta" class="full-width-image" />
+
+  <ion-card>
+    <div class="button-container">
+      <ion-button (click)="playAudio(audioRuta)" fill="clear" style="--ion-color-base: #F39055;">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+    </div>
+
+    <ion-card-header>
+      <ion-card-title>{{ titulo }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div [innerHTML]="texto"></div>
+    </ion-card-content>
+  </ion-card>
+</div>

@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejemplos (Cubo)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-example 
+  ruta="assets/images/cubo/fig_1.jpg" 
+  titulo="Ejemplo 1: Perímetro de la Base de un Cubo" 
+  texto="Para obtener el perímetro de la base de un cubo, necesitamos conocer la longitud del lado de la base. La base del cubo es un cuadrado, y el perímetro de un cuadrado se calcula con la fórmula <strong>P = 4s</strong>, donde <strong>s</strong> es la longitud del lado del cuadrado.
+  <br>
+  Supongamos que tenemos un cubo con un lado de <strong>s = 3</strong> unidades. Entonces, el perímetro de la base de este cubo sería:
+  
+  $$P = 4 * 3 = 12$$
+  
+  Por lo tanto, el perímetro de la base del cubo es <strong>12</strong> unidades.
+  "></app-example>
+
+  <app-example 
+  ruta="assets/images/cubo/fig_2.jpg" 
+  titulo="Ejemplo 2: Área de la Base de un Cubo" 
+  texto="El área de la base de un cubo se calcula con la fórmula para el área de un cuadrado, que es <strong>A = s^2</strong>, donde <strong>s</strong> es la longitud del lado del cuadrado.
+  <br>
+  Si tomamos un cubo con un lado de <strong>s = 4</strong> unidades, entonces el área de la base de este cubo sería:
+  
+  $$A = 4^2 = 16$$
+
+  Por lo tanto, el área de la base del cubo es <strong>16</strong> unidades cuadradas.
+  "></app-example>
+
+  <app-example 
+  ruta="assets/images/cubo/fig_3.jpg" 
+  titulo="Ejemplo 3: Área Lateral de un Cubo" 
+  texto="El área lateral de un cubo es la suma de las áreas de las cuatro caras laterales. Cada cara lateral es un cuadrado con lado <strong>s</strong>. La fórmula para el área lateral es <strong>A_lateral = 4s^2</strong>.
+  <br>
+  Supongamos que tenemos un cubo con un lado de <strong>s = 5</strong> unidades. Entonces, el área lateral de este cubo sería:
+  
+  $$A_{lateral} = 4 * 5^2 = 4 * 25 = 100$$
+  
+  Por lo tanto, el área lateral del cubo es <strong>100</strong> unidades cuadradas."></app-example>
+
+  <app-example 
+  ruta="assets/images/cubo/fig_4.jpg" 
+  titulo="Ejemplo 4: Área Total de un Cubo" 
+  texto="El área total de un cubo es la suma de las áreas de las seis caras. La fórmula para el área total es <strong>A_total = 6s^2</strong>.
+  <br>
+  Si tomamos un cubo con un lado de <strong>s = 2</strong> unidades, entonces el área total de este cubo sería:
+  
+  $$A_{total} = 6 * 2^2 = 6 * 4 = 24$$
+  
+  Por lo tanto, el área total del cubo es <strong>24</strong> unidades cuadradas."></app-example>
+
+  <app-example 
+  ruta="assets/images/cubo/fig_1.jpg" 
+  titulo="Ejemplo 5: Volumen de un Cubo" 
+  texto="El volumen de un cubo se calcula con la fórmula <strong>V = s^3</strong>, donde <strong>s</strong> es la longitud del lado del cubo.
+  <br>
+  Supongamos que tenemos un cubo con un lado de <strong>s = 6</strong> unidades. Entonces, el volumen de este cubo sería:
+
+  $$V = 6^3 = 216$$
+
+  Por lo tanto, el volumen del cubo es <strong>216</strong> unidades cúbicas.
+  "></app-example>
+  <ion-button class="btn-ex" expand="block" (click)="navigateToAnotherPage('/exercise-cubo')">Ejercicios</ion-button>
+</ion-content>

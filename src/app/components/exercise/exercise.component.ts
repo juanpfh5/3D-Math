@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { PopoverContentComponent } from './popover-content.component';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-exercise',
@@ -14,10 +15,6 @@ export class ExerciseComponent  implements OnInit {
   respuestaUsuario3: string = '';
   respuestaUsuario4: string = '';
 
-  constructor(private popoverController: PopoverController) { }
-
-  ngOnInit() {}
-
   @Input() pregunta1: string = '';
   @Input() pregunta2: string = '';
   @Input() pregunta3: string = '';
@@ -30,6 +27,34 @@ export class ExerciseComponent  implements OnInit {
   @Input() ruta2: string = '';
   @Input() ruta3: string = '';
   @Input() ruta4: string = '';
+
+  sanitizedText1: SafeHtml = '';
+  sanitizedText2: SafeHtml = '';
+  sanitizedText3: SafeHtml = '';
+  sanitizedText4: SafeHtml = '';
+
+  constructor(private popoverController: PopoverController, private sanitizer: DomSanitizer) { }
+
+  ngOnInit() {
+    this.sanitizedText1 = this.sanitizer.bypassSecurityTrustHtml(this.pregunta1);
+    this.sanitizedText2 = this.sanitizer.bypassSecurityTrustHtml(this.pregunta2);
+    this.sanitizedText3 = this.sanitizer.bypassSecurityTrustHtml(this.pregunta3);
+    this.sanitizedText4 = this.sanitizer.bypassSecurityTrustHtml(this.pregunta4);
+  }
+
+  @Input() tipo: string = ''; // 'prisma' o 'piramide'
+  
+  getCardBackground() {
+    if (this.tipo === 'prisma') {
+      // return '#C04275';
+      return '#F3E8CC';
+    } else if (this.tipo === 'piramide') {
+      // return '#1F5E45';
+      return '#FCE3CD';
+    } else {
+      return '#F9F1ED'; // Valor por defecto o para otros tipos
+    }
+  }
 
   async presentPopover(ev: Event) {
     const resultados: string[] = [];

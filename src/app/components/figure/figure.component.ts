@@ -50,8 +50,8 @@
 
 
 import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
-// import { Howl } from 'howler';
 import { AudioService } from '../../services/audio.service';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 declare var MathJax: any;
 
@@ -66,14 +66,29 @@ export class FigureComponent implements OnInit, AfterViewInit {
   @Input() titulo: string = '';
   @Input() texto: string = '';
   @Input() audioRuta: string = '';
+  @Input() tipo: string = ''; // 'prisma' o 'piramide'
 
-  constructor(private audioService: AudioService) { }
+  sanitizedText: SafeHtml = '';
 
-  ngOnInit() {}
+  constructor(private audioService: AudioService, private sanitizer: DomSanitizer) { }
+
+  ngOnInit() {
+    this.sanitizedText = this.sanitizer.bypassSecurityTrustHtml(this.texto);
+  }
 
   ngAfterViewInit() {
     // Espera a que la vista esté inicializada para procesar las fórmulas matemáticas
     MathJax.typeset();
+  }
+
+  getCardBackground() {
+    if (this.tipo === 'prisma') {
+      return '#F3E8CC';
+    } else if (this.tipo === 'piramide') {
+      return '#FCE3CD';
+    } else {
+      return '#F9F1ED'; // Valor por defecto o para otros tipos
+    }
   }
 
   playAudio(audioPath: string) {

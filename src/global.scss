@@ -77,6 +77,11 @@ ion-button {
 
 ion-card {
     --background: #F9F1ED;
+    // --background: #F8D7E8;
+    // --background: #F8EFE6;
+    // --background: #FCE3CD;
+    // --background: #F0D4BC;
+    // --background: #F3E8CC;
     color: #2C2826;
     ion-card-title {
         color: #2C2826;
@@ -86,4 +91,8 @@ ion-card {
 ion-toolbar {
     --background: #403B39;
     --color: #E0DCD7;
+}
+
+strong {
+    font-weight: bold;
 }

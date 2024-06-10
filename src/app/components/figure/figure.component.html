@@ -1,7 +1,7 @@
 <div class="content-wrapper">
   <img alt="figure" [src]="ruta" class="full-width-image" />
 
-  <ion-card>
+  <ion-card [ngStyle]="{'--background': getCardBackground()}">
     <div class="button-container">
       <ion-button (click)="playAudio(audioRuta)" fill="clear" style="--ion-color-base: #F39055;">
         <ion-icon name="play"></ion-icon>
@@ -13,7 +13,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <div [innerHTML]="texto"></div>
+      <div [innerHTML]="sanitizedText"></div>
     </ion-card-content>
   </ion-card>
 </div>

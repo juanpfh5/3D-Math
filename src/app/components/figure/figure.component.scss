@@ -1,18 +1,38 @@
 .content-wrapper {
     padding: 16px; /* Ajusta este valor según el margen de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos verticalmente */
+
+    @media (orientation: landscape) {
+        flex-direction: row; /* Disposición en columnas en horizontal */
+        justify-content: space-between;
+    }
 }
 
 .full-width-image {
     width: calc(100% - 32px); /* 100% del ancho menos el padding de ambos lados */
     margin: 0 auto; /* Centrar la imagen */
     display: block; /* Asegura que la imagen se comporte como un bloque */
+
+    @media (orientation: landscape) {
+        width: 35%; /* Ajusta el ancho de la imagen en horizontal */
+        margin: 0; /* Elimina el margen para alinear correctamente en horizontal */
+    }
+}
+
+ion-card {
+    width: 100%;
+    margin-top: 16px; /* Espacio entre la imagen y la tarjeta */
+
+    @media (orientation: landscape) {
+        width: 60%; /* Ajusta el ancho de la tarjeta en horizontal */
+        margin-top: 0; /* Elimina el margen superior para alinear correctamente en horizontal */
+    }
 }
 
 ion-card-content div {
     white-space: pre-line; /* Respetar los saltos de línea en el texto */
-}
-.content-wrapper {
-    position: relative;
 }
 
 .button-container {
@@ -21,4 +41,8 @@ ion-card-content div {
     right: 0;
     padding: 8px; /* Ajusta el espacio entre el botón y los bordes de la tarjeta */
     z-index: 1; /* Asegura que el botón esté en la capa superior */
+}
+
+.content-wrapper {
+    position: relative;
 }

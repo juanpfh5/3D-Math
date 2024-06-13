@@ -13,17 +13,44 @@ ion-item {
 
 .content-wrapper {
   padding: 16px; /* Ajusta este valor según el margen de la tarjeta */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar los elementos verticalmente */
+  margin-bottom: 16px;
+
+  @media (orientation: landscape) {
+    flex-direction: row; /* Disposición en columnas en horizontal */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
 }
 
 .full-width-image {
   width: calc(100% - 32px); /* 100% del ancho menos el padding de ambos lados */
-  margin: 0 auto; /* Centrar la imagen */
+  margin: 0 auto 16px; /* Centrar la imagen y añadir margen inferior */
   display: block; /* Asegura que la imagen se comporte como un bloque */
+
+  @media (orientation: landscape) {
+    width: 35%; /* Ajusta el ancho de la imagen en horizontal */
+    margin: 0; /* Elimina el margen para alinear correctamente en horizontal */
+    max-height: 100%; /* Asegura que la imagen no sea más alta que su contenedor */
+  }
+}
+
+ion-card {
+  width: 100%;
+  margin-top: 16px; /* Espacio entre la imagen y la tarjeta */
+
+  @media (orientation: landscape) {
+    width: 60%; /* Ajusta el ancho de la tarjeta en horizontal */
+    margin-top: 0; /* Elimina el margen superior para alinear correctamente en horizontal */
+    max-height: 100%; /* Asegura que el ion-card no sea más alto que su contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar contenido del ion-card verticalmente */
+  }
 }
 
 ion-card-content div {
   white-space: pre-line; /* Respetar los saltos de línea en el texto */
-}
-.content-wrapper {
-  position: relative;
 }

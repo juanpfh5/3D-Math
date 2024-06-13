@@ -1,0 +1,15 @@
+COMANDOS:
+-----
+ionic build
+ionic capacitor add android
+
+
+ionic capacitor copy android 
+cd android && .\gradlew assembleDebug && cd ..
+
+Salida:
+Android/app/build/outputs/apk/debug/app-debug.apk
+
+Para ejecutar directamente en el dispositivo:
+ionic capacitor copy android && cd android && .\gradlew assembleDebug && .\gradlew installDebug && cd ..
+---

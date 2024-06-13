@@ -81,27 +81,27 @@ export class EsferaPage implements OnInit {
     switch (option) {
       case 0: // Perímetro de la base
         respuesta = 2 * num2 * num1;
-        ruta = 'assets/images/cono/fig_1.jpg';
+        ruta = 'assets/images/esfera/fig_1.jpg';
         break;
       case 1: // Área de la base
         respuesta = num2 * Math.pow(num1, 2);
-        ruta = 'assets/images/cono/fig_2.jpg';
+        ruta = 'assets/images/esfera/fig_2.jpg';
         break;
       case 2: // Área lateral
         respuesta = num2 * num1 * Math.sqrt(Math.pow(num1, 2) + Math.pow(num3, 2));
-        ruta = 'assets/images/cono/fig_3.jpg';
+        ruta = 'assets/images/esfera/fig_3.jpg';
         break;
       case 3: // Área total
         respuesta = num2 * num1 * (num1 + Math.sqrt(Math.pow(num1, 2) + Math.pow(num3, 2)));
-        ruta = 'assets/images/cono/fig_4.jpg';
+        ruta = 'assets/images/esfera/fig_4.jpg';
         break;
       case 4: // Volumen
         respuesta = (1/3) * num2 * Math.pow(num1, 2) * num3;
-        ruta = 'assets/images/cono/figure_static.jpg';
+        ruta = 'assets/images/esfera/figure_static.jpg';
         break;
       default:
         respuesta = 0;
-        ruta = 'assets/images/cono/figure.gif';
+        ruta = 'assets/images/esfera/figure.gif';
         break;
     }
 

@@ -75,6 +75,13 @@ ion-button {
     --color: rgb(255, 255, 255);
 }
 
+.returnToMenu {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    --background: #95918E;
+    --color: #FFF;
+}
+
 ion-card {
     --background: #F9F1ED;
     // --background: #F8D7E8;
@@ -95,4 +102,5 @@ ion-toolbar {
 
 strong {
     font-weight: bold;
+    text-decoration: underline;
 }
